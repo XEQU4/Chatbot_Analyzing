@@ -1,0 +1,13 @@
+[project]
+name = "chatbot-analyzing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiogram>=3.20.0.post0",
+    "asyncpg>=0.30.0",
+    "loguru>=0.7.3",
+    "pytest-asyncio>=0.26.0",
+    "python-dotenv>=1.1.0",
+]
