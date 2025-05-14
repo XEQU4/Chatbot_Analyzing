@@ -34,6 +34,9 @@ jobs:
       - name: 🛠️ Prepare .env
         run: cp .env.example .env
 
+      - name: 🔧 Set PYTHONPATH
+        run: echo "PYTHONPATH=$PWD" >> $GITHUB_ENV
+
       - name: 🧪 Run tests if present
         run: |
           if [ -d tests ]; then
