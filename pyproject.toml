@@ -10,4 +10,12 @@ dependencies = [
     "loguru>=0.7.3",
     "pytest-asyncio>=0.26.0",
     "python-dotenv>=1.1.0",
+    "setuptools>=80.6.0",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["app"]
