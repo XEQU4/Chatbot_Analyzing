@@ -86,15 +86,15 @@ async def handle_contact(message: Message, state: FSMContext):
     else:
         await state.clear()
 
-    text = (f"Пользователь прошел анкету:\n"
-            f"    Вопрос: Есть ли вам 23 года?\n"
-            f"    Напишите ⬇️\n"
+    text = ("Пользователь прошел анкету:\n"
+            "    Вопрос: Есть ли вам 23 года?\n"
+            "    Напишите ⬇️\n"
             f"    Ответ: {state_data['first']}\n\n"
-            f"    Вопрос: Вы проживаете в Москве или в Московской области?\n"
+            "    Вопрос: Вы проживаете в Москве или в Московской области?\n"
             f"    Ответ: {state_data['second']}\n\n"
-            f"    Вопрос: Имеется ли у вас юридическое лицо?\n"
+            "    Вопрос: Имеется ли у вас юридическое лицо?\n"
             f"    Ответ: {state_data['third']}\n\n"
-            f"Немного данных пользователя:\n"
+            "Немного данных пользователя:\n"
             f"    Имя аккаунта телеграмм: {message.chat.first_name if message.chat.first_name is not None else ''} "
             f"{message.chat.last_name if message.chat.last_name is not None else ''}\n"
             f"    Имя пользователя (@username): {message.chat.username if message.chat.username else 'Нету'}\n"

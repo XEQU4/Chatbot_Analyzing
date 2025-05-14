@@ -8,7 +8,7 @@ class IKB:
 
     @staticmethod
     async def start(is_admin: bool = False) -> InlineKeyboardMarkup:
-        buttons_rows = [[InlineKeyboardButton(text="📝 Начать", callback_data=f"start")]]
+        buttons_rows = [[InlineKeyboardButton(text="📝 Начать", callback_data="start")]]
         if is_admin:
             buttons_rows.append([InlineKeyboardButton(text="📊 Посмотреть статистику", callback_data="statistics")])
 
