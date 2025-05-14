@@ -5,7 +5,7 @@ from aiogram.types import ErrorEvent
 
 from asyncpg import PostgresError
 
-from app.logger import logger
+from app.logger.loguru_logger import logger
 
 router = Router()
 

@@ -1,6 +1,6 @@
 from app.config import config
 from app.database.pool import db
-from app.logger import logger
+from app.logger.loguru_logger import logger
 
 
 @logger.catch

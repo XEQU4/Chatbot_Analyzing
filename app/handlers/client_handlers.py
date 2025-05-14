@@ -6,10 +6,11 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery, FSInputFile
 from aiogram.filters import CommandStart
 
-from app.keyboards import IKB, RKB
+from app.keyboards.inline_keyboards import IKB
+from app.keyboards.reply_keyboards import RKB
 from app.config import config
 from app.fsm import FSM
-from app.database import get_statistics_text_from_db
+from app.database.functions import get_statistics_text_from_db
 from app.dispatcher import bot
 
 router = Router()

@@ -1,10 +1,10 @@
 import asyncio
 import sys
 
-from database import db
+from database.pool import db
 from dispatcher import bot, dp
 from handlers import error_handling, client_handlers
-from logger import logger
+from logger.loguru_logger import logger
 
 
 async def main() -> None:
