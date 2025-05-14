@@ -28,7 +28,7 @@ async def query_start(query: CallbackQuery, state: FSMContext):
 
 
 @router.callback_query(lambda query: query.data == "statistics")
-async def query_start(query: CallbackQuery):
+async def sending_statistics(query: CallbackQuery):
     text = await get_statistics_text_from_db()
     await query.message.answer(text=text,
                                parse_mode=ParseMode.HTML)
